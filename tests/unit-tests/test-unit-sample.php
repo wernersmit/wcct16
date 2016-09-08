@@ -19,7 +19,7 @@ class UnitTests extends \PHPUnit_Framework_TestCase{
       $get_option = $this->getFunctionMock('WCCT', 'get_option');
 
       $get_option->expects($this->once())
-      ->with($this->equalsTo('wcct_venue'))
+      ->with($this->equalTo('wcct_venue'))
       ->willReturn('river-club');
 
       $this->assertEquals('river-club', wcct_get_option('venue'));
