@@ -16,7 +16,7 @@ class UnitTests extends \PHPUnit_Framework_TestCase{
 
   public function test_wcct_get_option()
   {
-      $this->assetEquals('river-club', wcct_get_option('venue'));
+      $this->assertEquals('river-club', wcct_get_option('venue'));
   }
 
 }
